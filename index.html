@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html ng-app="someApp">
+  <head>
+    <!-- SCROLLS -->
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- SPELLS -->
+    <!-- load angular and angular route via CDN 
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>-->
+    <script src="bower_components/hammer.js/hammer.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="script.js"></script>
+
+    <!--<style>
+        #hammer-pad{
+          height: 550px;
+          background-color:black;
+        }
+        #hammer-pad2{
+          height: 550px;
+          background-color:white;
+        }
+        #hammer-pad3{
+          height: 550px;
+          background-color:black;
+        }
+
+    </style>-->
+
+  </head>
+  <body ng-controller="mainController">
+    <!-- HEADER AND NAVBAR -->
+    
+          <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Title</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            </div>
+          </nav>
+    <!--  
+    <div id="hammer-pad"></div>
+    <div id="hammer-pad2"></div>
+    <div id="hammer-pad3"></div>
+    -->
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+
+      <!-- angular templating -->
+      <!-- this is where content will be injected -->
+      
+      <div ng-view></div>
+
+    </div>
+
+  </body>
+</html>
