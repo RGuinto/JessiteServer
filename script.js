@@ -5,11 +5,11 @@ someApp.config(function ($routeProvider) {
   $routeProvider
     .when('/', {
       templateUrl: 'pages/home.html',
-      controller : 'mainController'
+      controller : 'Controllers/newController'
     })
     .when('/about', {
       templateUrl: 'pages/about.html',
-      controller : 'aboutController'
+      controller : 'Controllers/aboutController'
     })
 });
 
@@ -19,6 +19,6 @@ someApp.controller('aboutController', function($scope) {
 });
 
 // create the controller and inject Angular's $scope
-someApp.controller('mainController', function($scope) {
+someApp.controller('newController', function($scope) {
   $scope.message = 'This is an awesome app!';
 });
