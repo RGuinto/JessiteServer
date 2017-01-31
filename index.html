@@ -51,20 +51,19 @@
             </div>
           </nav>
      
-
     <!-- MAIN CONTENT AND INJECTED VIEWS -->
     <div id="main">
 
       <!-- angular templating -->
       <!-- this is where content will be injected -->
-        <div id="hammer-pad"></div>
-        <div id="hammer-pad2"></div>
-        <div id="hammer-pad3"></div> 
-        <div ng-view></div>
+
+        <div ng-view>
+          <div id="hammer-pad"></div>
+          <div id="hammer-pad2"></div>
+          <div id="hammer-pad3"></div> 
+        </div>
 
     </div>
-
-    
 
   </body>
 </html>
